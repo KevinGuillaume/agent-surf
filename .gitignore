@@ -1,0 +1,56 @@
+# =====================================
+# Rust / Cargo (from github/gitignore/Rust.gitignore + official advice)
+# =====================================
+# Build artifacts
+target/
+debug/
+
+# =====================================
+# Node.js / npm / TypeScript / Playwright
+# =====================================
+# Dependencies – never commit, install with npm/pnpm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.lerna-debug.log*
+
+# Playwright-specific (browsers, traces, reports, auth – security-sensitive!)
+/playwright/.cache/
+/playwright/.auth/          # Auth states (cookies, storage) – NEVER commit!
+playwright-report/          # HTML reports
+blob-report/
+test-results/               # Test artifacts if you add tests
+playwright-tracing/         # Trace files (very large)
+test-results/
+*.trace.zip
+
+# npm cache
+.npm/
+
+# Environment vars
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build / dist outputs
+dist/
+build/
+out/
+
+# =====================================
+# Debug / Temp / Logs
+# =====================================
+*.log
+*.debug
+debug/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
