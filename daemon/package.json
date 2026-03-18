@@ -1,0 +1,21 @@
+{
+  "name": "daemon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@toon-format/toon": "^2.1.0",
+    "@types/node": "^25.3.3",
+    "playwright": "^1.58.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
+  }
+}
